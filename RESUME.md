@@ -4,36 +4,63 @@ Jonas Minnberg<br>
 **Year of birth**<br>
 1973<br>
 **Contact Details**<br>
-Björkhagsvägen 15<br>
-17275 Sundbyberg<br>
+Ekovägen 30<br>
+17237 Sundbyberg<br>
 SWEDEN<br>
-jonas.minnberg@gmail.com<br>
+jonas@minnberg.se<br>
+https://github.com/sasq64/<br>
 +46 (0) 702 262939<br>
 
 ## TL;DR
 
-Have been programming since 1985 (professionally since 1992), mainly in C & C++ but also C#, Java, Assembler and D. Enjoys software design from machine code level up to build systems and testing.
+Have been programming since 1985 (professionally since 1992), both in and out of the Games industry; mainly in _C/C++_ but also _C#_, _Java_, _Python_ and _Typescript_. Loves software design from machine code level up to build systems and testing.
 
-* Have been working at *Unity Technologies* for the last 3-4 years, on the Android/Mobile team.
+## Experience Overview (Recent first)
 
-* Worked at *King* for ~3 years, on several games, including *Bubble Saga* and at the end in the “Growth” team, doing C++ development for *Candy Crush Saga*.
+**Scapin Labs**: Main programmer at a startup, developing a mobile AR/AI app in _Unity_ (_C#_) and _typescript_ on the backend.
 
-* Started and ran a company, *Swimsuit Boys* for 4 years, where I designed and implemented a virtual machine and server for platform independent multiplayer gaming on pre-smartphone mobiles.
+**Electrolux**: Consultant work; rewrote/refactored an "appliance simulator" mobile SDK from _Java_ to _C++_, including unit tests and documentation.
 
-* Developed an application for 3D visualization of architecture and surrounding environment, including realtime shadows, at *Sightline Vision AB*.
+**Unity Technologies**: Worked on the Android/Mobile team doing _C++/C#_ development and Android bug fixing.
 
-* Worked at *Digital Illusions* as a Render programmer on *Battlefield 2*, working on things like realtime water and the lightmap renderer.
+**King**: Worked on several games, including the first Facebook game *Bubble Saga* and at the end in the “Growth” team, doing C++ development for *Candy Crush Saga*.
 
-* Worked ~3.5 years  for *Amuze* on *Headhunter*, a major Dreamcast and PS2 title published by *Sega Europe*. Main tasks included porting Headhunter to PS2 and writing the multiplayer/network portion for the Dreamcast-version.
+**Swimsuit Boys**: Started and ran a company together with a few colleagues where I designed and implemented a virtual machine and server for platform independent multiplayer gaming on pre-smartphone mobiles.
 
-## Professional Experience
+**Digital Illusions**: Worked as a render programmer on the PS2 team and then on the PC *Battlefield 2* team, dealing with things like realtime water and the lightmap renderer.
+
+**Amuze**: Worked on *Headhunter*, a major Dreamcast and PS2 title published by *Sega Europe*. Main tasks included porting Headhunter to PS2 and writing the multiplayer/network portion for the Dreamcast-version.
+
+## Detailed Experience
+
+### Scapin Labs
+
+**Main Tasks**
+* AR Face tracking and Network programming (low latency synchronization of face expressions etc)
+* Unity script language extension with ability to use Unity API at runtime.
+* GPT streaming with Text to speech and Voice to text, minimizing round trip from user speaking to AI answering.
+
+Worked at a startup that tried to create a mobile/social (metaverse like) avatar chat application, involving things like customizable (3D) avatars, multi user rooms, face tracking, voice chat, AI avatars, voice to text and text to speech.
+
+We used Unity (plus some native parts in C/C++ & Objective C) on the frontend and Firebase (with typescript) on the backend.
+
+### Electrolux (2019-)
+**Main Tasks**
+* Portable Java/C++ development
+* Java refactoring
+* High coverage unit testing
+* Exploration and documentation of institutional knowledge.
+
+
+Was tasked with rewriting a legacy SDK implemented independently in Swift (for iOS) and Java (for Android) into a single, portable C++ library.
+
+Involved careful refactoring of Java code to be able to isolate parts that could be moved over to C++ gradually. Also involved careful unit testing to prove the new implementation worked, and understanding and documenting the domain.
 
 ### Unity Technologies (2014-)
 **Main Tasks**
 * Application development in C#/C++ and Java
 * Android Bug fixing
-
-Wrote *Fastzip*, A very fast zip packer/unpacker that could also sign Android APKs on the fly; https://github.com/sasq64/fastzip
+* Wrote *Fastzip*, A very fast zip packer/unpacker that could also sign Android APKs on the fly; https://github.com/sasq64/fastzip
 
 ### King (2010-2013)
 
