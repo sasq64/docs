@@ -13,7 +13,7 @@ https://github.com/sasq64/<br>
 
 ## TL;DR
 
-Have been programming since 1985 (professionally since 1992), both in and out of the Games industry; mainly in _C/C++_ but also _C#_, _Java_, _Python_ and _Typescript_. Loves software design from machine code level up to build systems and testing.
+Have been programming since 1985 (professionally since 1992), both in and out of the Games industry; mainly in _C/C++_ but also _C#_, _Java_, _Python_ and _Typescript_. Love software design from machine code level up to build systems and testing.
 
 ## Experience Overview (Recent first)
 
@@ -33,7 +33,7 @@ Have been programming since 1985 (professionally since 1992), both in and out of
 
 ## Detailed Experience
 
-### Scapin Labs
+### Scapin Labs (2021-2024)
 
 **Main Tasks**
 * AR Face tracking and Network programming (low latency synchronization of face expressions etc)
@@ -44,7 +44,7 @@ Worked at a startup that tried to create a mobile/social (metaverse like) avatar
 
 We used Unity (plus some native parts in C/C++ & Objective C) on the frontend and Firebase (with typescript) on the backend.
 
-### Electrolux (2019-)
+### Electrolux (2018-2021)
 **Main Tasks**
 * Portable Java/C++ development
 * Java refactoring
@@ -56,13 +56,13 @@ Was tasked with rewriting a legacy SDK implemented independently in Swift (for i
 
 Involved careful refactoring of Java code to be able to isolate parts that could be moved over to C++ gradually. Also involved careful unit testing to prove the new implementation worked, and understanding and documenting the domain.
 
-### Unity Technologies (2014-)
+### Unity Technologies (2014-2018)
 **Main Tasks**
 * Application development in C#/C++ and Java
 * Android Bug fixing
 * Wrote *Fastzip*, A very fast zip packer/unpacker that could also sign Android APKs on the fly; https://github.com/sasq64/fastzip
 
-### King (2010-2013)
+### King (2010-2014)
 
 **Main Tasks**
 * Flash & C++ games programming
