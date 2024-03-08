@@ -71,7 +71,7 @@ Wrote the flash games *Farm King* and *Circus Surprise*, then joined the team de
 
 ### Swimsuitboys AB (2006 -2010)
 **Main Tasks**
-Design, implementation and documentation of a technology named Swimmer, a Virtual Machine for small devices. C++ and Java/J2ME.
+Design, implementation and documentation of a technology named Swimmer, a Virtual Machine for small devices. C++, Python and Java/J2ME.
 
 Swimsuit Boys was a company I started together with a few old colleagues, to develop a technology I had started on my spare time; A thin client application with a fast virtual machine, and a server infrastructure that could send down code and data to connected clients.
 
