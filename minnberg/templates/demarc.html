@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>demarc &mdash; {{ config.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baumans&family=Press+Start+2P&family=Sixtyfour&family=VT323&display=swap">
+  <link rel="stylesheet" href="{{ get_url(path='demarc.css') }}">
+</head>
+<body>
+  <!-- moving Amiga-style copper / raster bars in the background -->
+  <!-- <div class="copper" aria-hidden="true"></div> -->
+  <div class="stars" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <main class="demo">
+
+    <header class="logo">
+      <h1 class="chrome" data-text="DEMARC">DEMARC</h1>
+      <p class="tag">&#9670; because emulation is better than youtube &#9670;</p>
+    </header>
+
+    <section class="screen">
+      <div class="screen-frame">
+        <video autoplay loop muted playsinline poster="">
+          <source src="{{ get_url(path='demarc.mp4') }}" type="video/mp4">
+          Your browser refuses to play the demo. Get a real Amiga.
+        </video>
+      </div>
+    </section>
+
+    <section class="prose">
+      {{ page.content | safe }}
+    </section>
+
+    <footer class="bottom">
+      <a class="backlink" href="{{ config.base_url }}">&#9664; back to minnberg.se</a>
+    </footer>
+
+  </main>
+
+  <!-- classic horizontal demoscene scroller -->
+  <div class="scroller" aria-hidden="true">
+    <div class="scroll-text">
+HELLO DEMO LOVERS! HERE YOU CAN DOWNLOAD DEMARC, AN EMULATOR FRONTEND FOR THE DEMO SCENE. I CREATED DEMARC TO MAKE IT EASY TO WATCH DOWNLOADED DEMOS, SINCE I PREFER THAT TO YOUTUBE. 
+    </div>
+  </div>
+</body>
+</html>

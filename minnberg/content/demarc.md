@@ -1,0 +1,78 @@
++++
+title = "demarc"
+template = "demarc.html"
++++
+
+A command line emulator frontend for the demoscene
+
+
+## Main goal
+
+Make it easy to watch demos from C64 and Amiga
+
+* Runs multiple demos in order or shuffled
+* Shows demo meta data as overlay
+* CRT shader for "authentic" look
+* Can run Amiga/Atari/C64 exes & disk images
+* Right-Alt hotkey for disk switch etc
+* Can run multiple files at once in a grid
+
+
+## Download
+
+Prebuilt windows binary [here](/dl/demarc.zip)
+
+
+## Build
+
+You need _rust_.
+
+`git clone https://github.com/sasq64/demarc.git`
+
+`cargo build --release`
+
+## Run
+
+First, set your monitor to 50Hz if possible.
+
+You need libretro libraries for the emulated system. Libraries are searched for
+in `<current_dir>/libretro`, `<exec_dir>` and `/usr/lib/libretro/`
+
+then
+
+`cargo run -- <files>`
+
+or
+
+`target/release/demarc <files>`
+
+### Windows
+
+Libraries are in `libretro/`
+
+If you copy the exe to your path, also copy the DLL:s and it should work
+
+### Linux
+
+If you installed retroarch you may have libs available in `/usr/lib/libretro`
+
+## Shortcuts
+
+_Right Alt_ +
+
+```
+D = Swap disk
+N = Next file
+S = Change scaling
+B = Change border
+I = Toggle Info
+P = Screenshot
+R = Reset
+C = Toggle CRT filter
+
+For grid:
+
+TAB = Next emulator
+ENTER = Maximize/Unmaximize
+A = Select all emulators
+```

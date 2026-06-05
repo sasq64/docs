@@ -21,3 +21,7 @@ theme = "catppuccin-mocha"
 [extra]
 hyde_theme = "theme-base-09"
 # Put all your custom variables here
+
+hyde_links = [
+    { url = "/demarc/", name = "demarc" },
+]
