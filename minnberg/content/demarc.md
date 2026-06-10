@@ -3,7 +3,6 @@ title = "demarc"
 template = "demarc.html"
 +++
 
-A command line emulator frontend for the demoscene
 
 
 ## Main goal
@@ -12,53 +11,41 @@ Make it easy to watch demos from C64 and Amiga
 
 * Runs multiple demos in order or shuffled
 * Shows demo meta data as overlay
-* CRT shader for "authentic" look
+* CRT shader (Lottes) for "authentic" look
 * Can run Amiga/Atari/C64 exes & disk images
 * Right-Alt hotkey for disk switch etc
 * Can run multiple files at once in a grid
 
 
-## Download
+## Download (Windows)
 
-Prebuilt windows binary [here](/dl/demarc.zip)
+Pre-built windows binary [here](/dl/demarc.zip)
 
 
-## Build
+## Rust Install
 
-You need _rust_.
+You need [rust](https://rustup.rs).
 
-`git clone https://github.com/sasq64/demarc.git`
+`cargo install --git https://github.com/sasq64/demarc.git`
 
-`cargo build --release`
+## Prepare
+
+Set your monitor to 50Hz if possible.
 
 ## Run
 
-First, set your monitor to 50Hz if possible.
+`demarc --help`
 
-You need libretro libraries for the emulated system. Libraries are searched for
-in `<current_dir>/libretro`, `<exec_dir>` and `/usr/lib/libretro/`
+`demarc --aga --shuffle AmigaAGA/`
 
-then
+*TIP:* Download all intros from [https://intros.c64.org](https://intros.c64.org/]) and run
 
-`cargo run -- <files>`
+`demarc --grid=4x3 --shuffle intros_c64_org_12596_full`
 
-or
-
-`target/release/demarc <files>`
-
-### Windows
-
-Libraries are in `libretro/`
-
-If you copy the exe to your path, also copy the DLL:s and it should work
-
-### Linux
-
-If you installed retroarch you may have libs available in `/usr/lib/libretro`
 
 ## Shortcuts
 
-_Right Alt_ +
+_Right Alt_ or _Right Ctrl_ +
 
 ```
 D = Swap disk
@@ -69,10 +56,13 @@ I = Toggle Info
 P = Screenshot
 R = Reset
 C = Toggle CRT filter
+W/SHIFT-W = Warp 10s/30s
+J = Toggle Joystick/keyboard
 
 For grid:
 
 TAB = Next emulator
+SHIFT+TAB = Previous emulator
 ENTER = Maximize/Unmaximize
 A = Select all emulators
 ```

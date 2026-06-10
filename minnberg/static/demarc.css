@@ -5,7 +5,7 @@
 
 :root {
   --neon-cyan:    #19f0ff;
-  --neon-magenta: #ff2bd6;
+  --neon-magenta: #000076;
   --neon-green:   #36ff6a;
   --neon-yellow:  #ffe23d;
   --amber:        #ffb000;
@@ -83,13 +83,13 @@ html, body {
   inset: 0;
   z-index: 50;
   pointer-events: none;
-  /* background: repeating-linear-gradient( */
-  /*   to bottom, */
-  /*   rgba(0,0,0,0)   0px, */
-  /*   rgba(0,0,0,0)   2px, */
-  /*   rgba(0,0,0,0.35) 3px, */
-  /*   rgba(0,0,0,0.35) 4px */
-  /* ); */
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0)   0px,
+    rgba(0,0,0,0)   2px,
+    rgba(0,0,0,0.35) 3px,
+    rgba(0,0,0,0.35) 4px
+  );
   mix-blend-mode: multiply;
 }
 
@@ -144,6 +144,15 @@ html, body {
   margin-top: 1rem;
   letter-spacing: 0.1em;
 }
+
+.tag2 {
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(0.55rem, 1.8vw, 0.85rem);
+  color: var(--neon-cyan);
+  margin-top: 1rem;
+  letter-spacing: 0.1em;
+}
+
 
 /* --- the video "monitor" --------------------------------------------- */
 
@@ -242,6 +251,7 @@ html, body {
 }
 
 .prose pre {
+  font-family: "Press Start 2P", monospace;
   background: #000;
   border: 2px solid var(--neon-cyan);
   border-radius: 8px;
@@ -252,7 +262,7 @@ html, body {
 
 .prose pre code {
   font-family: "VT323", monospace;
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   color: var(--neon-green);
   background: none;
   border: none;

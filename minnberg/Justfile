@@ -1,0 +1,7 @@
+
+
+server:
+    zola serve
+
+sync:
+    zola build && rsync -avz public/ sasq@minnberg.se:/var/www/html/
